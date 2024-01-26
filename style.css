@@ -1,0 +1,89 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background-color: #3a5a40;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 100px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    background-color: #660708;
+    color: #fff;
+    border: 2px solid #000;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-top: 26px;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #000;
+}
+
+img {
+    display: flex;
+    margin: auto;
+    padding-top: 22px;
+}
+
+#player_cards, #dealer_cards {
+    display: flex;
+    justify-content: center;
+}
+
+#player_cards img, #dealer_cards img {
+    max-width: 140px;
+    margin: 4px;
+}
+
+p#message, #player_pts, #dealer_pts {
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+p#message { 
+    font-size: 28px !important;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 2px 2px #000;
+}
+
+.player_pts, .dealer_pts {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: -36px;
+}
+
+h4 {
+    color: #fff;
+    font-size: 22px;
+    margin: 0;
+}
+
+hr {
+    border: 1px solid #000;
+    width: 50px;
+    margin-top: 22px;
+    margin-bottom: 0px;
+}
+
+.rotate_card {
+    animation: rotate 1s;
+}
+
+@keyframes rotate {
+    0% { opacity: 0; transform: rotateY(180deg);} 
+    100% { opacity: 1; transform: rotateY(0deg); }
+} 
